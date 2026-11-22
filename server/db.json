@@ -1,0 +1,280 @@
+{
+  "skills": [
+    {
+      "id": "html-css",
+      "name": "HTML/CSS"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript"
+    },
+    {
+      "id": "react",
+      "name": "React"
+    },
+    {
+      "id": "git",
+      "name": "Git"
+    },
+    {
+      "id": "excel",
+      "name": "Microsoft Excel"
+    },
+    {
+      "id": "data-entry",
+      "name": "Data entry"
+    },
+    {
+      "id": "customer-service",
+      "name": "Customer service"
+    },
+    {
+      "id": "communication",
+      "name": "Communication"
+    },
+    {
+      "id": "teamwork",
+      "name": "Teamwork"
+    },
+    {
+      "id": "sales",
+      "name": "Sales"
+    },
+    {
+      "id": "english",
+      "name": "English speaking"
+    },
+    {
+      "id": "time-management",
+      "name": "Time management"
+    }
+  ],
+  "resources": [
+    {
+      "id": "r1",
+      "skillId": "html-css",
+      "title": "Responsive Web Design",
+      "provider": "freeCodeCamp",
+      "link": "https://www.freecodecamp.org/"
+    },
+    {
+      "id": "r2",
+      "skillId": "javascript",
+      "title": "JavaScript Algorithms and Data Structures",
+      "provider": "freeCodeCamp",
+      "link": "https://www.freecodecamp.org/"
+    },
+    {
+      "id": "r3",
+      "skillId": "react",
+      "title": "Front End Development Libraries",
+      "provider": "freeCodeCamp",
+      "link": "https://www.freecodecamp.org/"
+    },
+    {
+      "id": "r4",
+      "skillId": "git",
+      "title": "Introduction to Git and GitHub",
+      "provider": "Coursera",
+      "link": "https://www.coursera.org/"
+    },
+    {
+      "id": "r5",
+      "skillId": "excel",
+      "title": "Excel basics",
+      "provider": "Microsoft Learn",
+      "link": "https://learn.microsoft.com/training/"
+    },
+    {
+      "id": "r6",
+      "skillId": "data-entry",
+      "title": "Data entry skills",
+      "provider": "Alison",
+      "link": "https://alison.com/"
+    },
+    {
+      "id": "r7",
+      "skillId": "customer-service",
+      "title": "Customer service basics",
+      "provider": "HubSpot Academy",
+      "link": "https://academy.hubspot.com/"
+    },
+    {
+      "id": "r8",
+      "skillId": "communication",
+      "title": "Effective communication",
+      "provider": "Alison",
+      "link": "https://alison.com/"
+    },
+    {
+      "id": "r9",
+      "skillId": "teamwork",
+      "title": "Working in teams",
+      "provider": "Coursera",
+      "link": "https://www.coursera.org/"
+    },
+    {
+      "id": "r10",
+      "skillId": "sales",
+      "title": "Sales fundamentals",
+      "provider": "HubSpot Academy",
+      "link": "https://academy.hubspot.com/"
+    },
+    {
+      "id": "r11",
+      "skillId": "english",
+      "title": "English for the workplace",
+      "provider": "Alison",
+      "link": "https://alison.com/"
+    },
+    {
+      "id": "r12",
+      "skillId": "time-management",
+      "title": "Time management",
+      "provider": "Google Digital Garage",
+      "link": "https://learndigital.withgoogle.com/digitalgarage"
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "name": "Demo Job Seeker",
+      "email": "seeker@demo.com",
+      "role": "jobseeker",
+      "passwordHash": "$2b$08$QxT835NaRm9ymzLRIKYqB.6GfnjRQpdJ/d2A.KFSNDmfqmgvatwR2",
+      "skills": [
+        "html-css",
+        "javascript",
+        "communication",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "u2",
+      "name": "Aline Demo",
+      "email": "aline@demo.com",
+      "role": "jobseeker",
+      "passwordHash": "$2b$08$QxT835NaRm9ymzLRIKYqB.6GfnjRQpdJ/d2A.KFSNDmfqmgvatwR2",
+      "skills": [
+        "html-css",
+        "javascript",
+        "react",
+        "git",
+        "communication"
+      ]
+    },
+    {
+      "id": "u3",
+      "name": "Eric Demo",
+      "email": "eric@demo.com",
+      "role": "jobseeker",
+      "passwordHash": "$2b$08$QxT835NaRm9ymzLRIKYqB.6GfnjRQpdJ/d2A.KFSNDmfqmgvatwR2",
+      "skills": [
+        "customer-service",
+        "communication",
+        "english"
+      ]
+    },
+    {
+      "id": "e1",
+      "name": "Demo Employer",
+      "email": "employer@demo.com",
+      "role": "employer",
+      "passwordHash": "$2b$08$QxT835NaRm9ymzLRIKYqB.6GfnjRQpdJ/d2A.KFSNDmfqmgvatwR2",
+      "companyName": "Sample Company"
+    },
+    {
+      "id": "u1795376524674",
+      "name": "Lydivine Nshuti",
+      "email": "lydivinens@gmail.com",
+      "role": "jobseeker",
+      "passwordHash": "$2b$08$xT8pp0FHaehrpIiIhneBsuXi1mHP6uJWEsuoPSkMUnF2VaillJ9Wu",
+      "skills": [
+        "html-css",
+        "react",
+        "javascript",
+        "excel"
+      ]
+    },
+    {
+      "id": "u1795376706695",
+      "name": "Isibo Enzel",
+      "email": "isiboenzel@gmail.com",
+      "role": "employer",
+      "passwordHash": "$2b$08$.CrAUKhOgLNvpGMx/8DPreHS2yJqqZH044J82pRneEJyyWA5uh1Me",
+      "companyName": "RURA"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "j1",
+      "title": "Junior web developer",
+      "location": "Kigali",
+      "employerId": "e1",
+      "requiredSkills": [
+        "html-css",
+        "javascript",
+        "react",
+        "git"
+      ]
+    },
+    {
+      "id": "j2",
+      "title": "Customer service agent",
+      "location": "Kigali",
+      "employerId": "e1",
+      "requiredSkills": [
+        "customer-service",
+        "communication",
+        "english",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "j3",
+      "title": "Data entry clerk",
+      "location": "Kigali",
+      "employerId": "e1",
+      "requiredSkills": [
+        "data-entry",
+        "excel",
+        "time-management"
+      ]
+    },
+    {
+      "id": "j4",
+      "title": "Sales associate",
+      "location": "Kigali",
+      "employerId": "e1",
+      "requiredSkills": [
+        "sales",
+        "customer-service",
+        "communication",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "j1795376789838",
+      "title": "IT Assistant ",
+      "location": "Kigali",
+      "employerId": "u1795376706695",
+      "requiredSkills": [
+        "teamwork",
+        "html-css",
+        "react",
+        "javascript",
+        "git",
+        "excel",
+        "english"
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "id": "a1794693741490",
+      "jobId": "j1",
+      "seekerId": "u1",
+      "status": "Applied"
+    }
+  ]
+}

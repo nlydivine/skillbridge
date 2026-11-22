@@ -133,7 +133,19 @@ app.post("/api/jobs", auth, only("employer"), (req, res) => {
   res.status(201).json({ job: jobView(job) });
 });
 
-app.listen(4000, () => console.log("API running on http://localhost:4000"));
+app.put("/api/jobs/:id", auth, only("employer"), (req, res) => {
+  const job = db.jobs.find((j) => j.id === req.params.id && j.employerId === req.user.id);
+  if (!job) return res.status(404).json({ error: "Job not found." });
+  const { title, location, requiredSkills } = req.body;
+  const skills = (requiredSkills || []).filter((id) => db.skills.some((s) => s.id === id));
+  if (!title) return res.status(400).json({ error: "Add a job title." });
+  if (skills.length === 0) return res.status(400).json({ error: "Pick at least one required skill." });
+  job.title = title;
+  job.location = location || "Kigali";
+  job.requiredSkills = skills;
+  save();
+  res.json({ job: jobView(job) });
+});
 
 app.get("/api/my/jobs", auth, only("employer"), (req, res) => {
   res.json({ jobs: db.jobs.filter((j) => j.employerId === req.user.id).map((j) => jobView(j)) });
@@ -167,7 +179,7 @@ app.post("/api/jobs/:id/apply", auth, only("jobseeker"), (req, res) => {
   res.status(201).json({ ok: true });
 });
 
-app.get("/api/applications", auth, only("jobseeker"), (req, res) => {
+app.get("/api/applications", auth, (req, res, next) => next(), only("jobseeker"), (req, res) => {
   const applications = db.applications
     .filter((a) => a.seekerId === req.user.id)
     .map((a) => ({ id: a.id, status: a.status, jobTitle: db.jobs.find((j) => j.id === a.jobId)?.title }));
