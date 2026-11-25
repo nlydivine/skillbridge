@@ -24,3 +24,9 @@ nav button.active { background: #6b3fa0; color: #fff; }
 .link { color: #6b3fa0; cursor: pointer; display: block; margin-top: 12px; }
 .badge { background: #efe6fa; color: #4a2674; padding: 2px 8px; border-radius: 10px; font-size: 12px; }
 a { color: #6b3fa0; }
+.lang { display: flex; gap: 6px; justify-content: center; margin-bottom: 8px; }
+.lang button { background: #efe6fa; color: #4a2674; margin: 0; padding: 6px 12px; }
+.lang button.on { background: #6b3fa0; color: #fff; }
+header .lang { margin: 0 0 0 12px; }
+header .lang button { background: transparent; color: #fff; border: 1px solid #fff; }
+header .lang button.on { background: #fff; color: #5b2a8c; }
