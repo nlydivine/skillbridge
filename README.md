@@ -1,30 +1,34 @@
+
 # SkillBridge
 
-A web app that helps unemployed youth in Kigali find jobs that match their skills. It shows the skills a job needs that a user does not have yet, and links to free courses to learn them.
+A web app that helps unemployed youth in Kigali find jobs that match their skills. It shows the skills a job needs that a user does not have yet, and links to free courses to learn them. The app works in English and Kinyarwanda.
 
 ## Live app
 
-- Frontend: https://skillbridge-sv08.onrender.com
-- Backend API: https://skillbridge-api-3212.onrender.com
+**https://skillbridge-sv08.onrender.com**
 
-The app runs on a free server, so the first load can take up to one minute while it wakes up.
+The app runs on a free server, so the first load can take up to one minute while it wakes up. Please wait and do not refresh.
 
-## Demo accounts
+## How to log in
 
-Password for both accounts: `demo1234`
+Use one of the demo accounts below. The password for both is `demo1234`.
 
-| Role | Email |
-| --- | --- |
-| Job seeker | seeker@demo.com |
-| Employer | employer@demo.com |
+| Role | Email | Password |
+| --- | --- | --- |
+| Job seeker | seeker@demo.com | demo1234 |
+| Employer | employer@demo.com | demo1234 |
 
-You can also sign up with a new account and choose a role.
+You can also create your own account. Click **New here? Sign up**, choose **I am a job seeker** or **I am an employer**, fill in the form, and click **Sign up**.
+
+Use the **EN** and **RW** buttons to switch between English and Kinyarwanda.
 
 ## Features
 
 **Job seekers:** sign up and log in, choose skills, see jobs ranked by match percentage, see which skills they have and which are missing, get free learning resources for each missing skill, apply for jobs, track applications.
 
 **Employers:** sign up and log in, post jobs, edit jobs, see candidates ranked by match percentage.
+
+**Everyone:** switch the app between English and Kinyarwanda.
 
 ## Tech stack
 
@@ -33,18 +37,29 @@ You can also sign up with a new account and choose a role.
 - Authentication: JWT and bcrypt
 - Data: JSON file (`server/db.json`). MongoDB is planned as the next step.
 
-## Run it on your computer
+## Run it on your computer, step by step
 
-You need Node.js 18 or newer and Git.
+### Step 1. Install the tools
 
-1. Clone the repository and open it:
+1. Install Node.js version 18 or newer from https://nodejs.org
+2. Install Git from https://git-scm.com
+3. Open a terminal and check both are installed:
+
+```
+node -v
+git --version
+```
+
+Each command should print a version number.
+
+### Step 2. Download the project
 
 ```
 git clone https://github.com/nlydivine/skillbridge.git
 cd skillbridge
 ```
 
-2. Install and start the backend:
+### Step 3. Start the backend
 
 ```
 cd server
@@ -52,21 +67,37 @@ npm install
 node index.js
 ```
 
-You should see `API running on port 4000`. Leave this terminal open.
+You should see `API running on port 4000`. Leave this terminal open. The backend must keep running.
 
-3. Open a second terminal. Install and start the frontend:
+### Step 4. Start the frontend
+
+1. Open a **second** terminal.
+2. Go to the project folder you downloaded in Step 2, then run:
 
 ```
-cd skillbridge/client
+cd client
 npm install
 npm run dev
 ```
 
-Use the path to the folder where you cloned the project.
+You should see a link like `http://localhost:5173`.
 
-4. Open http://localhost:5173 in your browser.
+### Step 5. Open the app
 
-5. Log in with a demo account from the table above.
+1. Open http://localhost:5173 in your browser.
+2. Log in with a demo account from the table above, or sign up.
+3. Use the EN and RW buttons to change the language.
+
+### Step 6. Stop the app
+
+Click each terminal and press `Ctrl+C`.
+
+## Troubleshooting
+
+- **"Network error" when logging in:** the backend is not running. Do Step 3 again and keep that terminal open.
+- **"Port already in use":** another program is using port 4000 or 5173. Close it, or stop the old terminal with `Ctrl+C`, and start again.
+- **`npm: command not found`:** Node.js is not installed. Do Step 1 again.
+- **Live app loads slowly the first time:** the free server is waking up. Wait one minute.
 
 ## Deployment
 
@@ -90,4 +121,5 @@ Frontend (Render Static Site):
 skillbridge/
 ├── client/    React frontend
 └── server/    Express API and sample data
+```
 
